@@ -24,6 +24,7 @@ h1, p, div {
 #app {
     position: relative;
     width: 40%;
+    min-height: 800px;
     min-width: 15em;
     max-width: 22em;
     z-index: 2;
