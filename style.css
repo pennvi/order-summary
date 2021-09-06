@@ -7,6 +7,7 @@
     font-family: 'Red Hat Display', sans-serif;
     font-size: 1rem;
     overflow: hidden;
+
 }
 
 h1, p, div {
@@ -14,21 +15,24 @@ h1, p, div {
 }
 
 
-#background {
+body {
     z-index: 1;
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
+    background: url(images/pattern-background-desktop.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 #app {
     position: relative;
     width: 40%;
     min-width: 15em;
-    max-width: 20em;
+    max-width: 22em;
     z-index: 2;
-    margin: 5% auto;
+    margin: 10% auto;
     background-color: white;
     box-shadow: 0px 8px 8px hsl(0, 0%, 79%);
     border-radius: 8px;
@@ -42,7 +46,7 @@ h1, p, div {
 #order {
     font-weight: 900;
     color: hsl(223, 47%, 23%);
-    font-size: 135%;
+    font-size: 150%;
     margin: 1.2em auto .4em auto;
 }
 
@@ -152,4 +156,12 @@ button {
 ::selection {
     color: white;
     background-color: black;
+}
+
+@media screen and (max-width:475px) {
+    body {
+    background: url(images/pattern-background-mobile.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    }
 }
