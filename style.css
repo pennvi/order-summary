@@ -29,9 +29,9 @@ body {
     position: relative;
     width: 40%;
     min-width: 15em;
-    max-width: 27em;
+    max-width: 28em;
     z-index: 2;
-    margin: 10% auto;
+    margin: 7% auto;
     background-color: white;
     box-shadow: 0px 8px 8px hsl(0, 0%, 79%);
     border-radius: 20px;
@@ -66,7 +66,7 @@ body {
     margin: 1em auto 0em auto;
     padding: .8em .5em;
     flex-direction: row;
-    justify-content: flex-start
+    justify-content: flex-start;
 }
 
 #itunes {
@@ -82,12 +82,13 @@ body {
     align-self: center;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: left;
+    align-items: flex-start;
+    margin-left: 1.2em;
 }
 
 #change {
-    font-size: .8em;
+    font-size: .9em;
     font-weight: 600;
     color: hsl(245, 75%, 52%);
     text-decoration: underline;
@@ -108,7 +109,7 @@ body {
 }
 
 #price {
-    font-size: .8em;
+    font-size: 1em;
     color: hsl(224, 23%, 55%);
     margin-top: .3em;
 }
@@ -120,7 +121,7 @@ body {
     border-radius: 10px;
     transition: width .3s ease, background-color .3s;
     padding: .4em 1em .6em 1em;
-    box-shadow: 1px 8px 8px hsl(0, 0%, 83%), -1px 8px 8px hsl(0, 0%, 79%);
+    box-shadow: 1px 1.4em 8px hsl(0, 0%, 83%), -1px 8px 8px hsl(0, 0%, 79%);
 }
 
 #proceed {
@@ -136,9 +137,9 @@ body {
 
 #cancel {
     font-size: .75em;
-    font-weight: 700;
+    font-weight: 900;
     color: hsl(224, 23%, 55%);
-    margin: 2em auto 3em auto;
+    margin: 1.6em auto 3em auto;
     transition: font-weight 1s;
 }
 
@@ -157,11 +158,42 @@ button {
     background-color: black;
 }
 
-@media screen and (max-width:475px) {
+@media screen and (max-width:800px) {
     body {
     background: url(images/pattern-background-mobile.svg);
     background-size: 100%;
     background-repeat: no-repeat;
+    }
+
+    #plan {
+        flex-direction: column;
+        margin: auto;
+        width: 60%;
+        justify-content: center;
+    }
+
+    #plantext {
+        margin: 1em auto;
+        padding: 0;
+        width: 100%;
+    }
+    #itunes {
+        margin: 0 auto;
+        width: 3em;
+    }
+    #annual {
+        margin: 0 auto; 
+    }
+
+    #change {
+        margin: 0 auto;
+    } 
+    
+    
+    #price {
+        margin: 0 auto;
+        width: 100%;
+        
     }
 
 }
