@@ -6,7 +6,6 @@
     text-align: center;
     font-family: 'Red Hat Display', sans-serif;
     font-size: 1rem;
-    overflow: hidden;
 
 }
 
@@ -30,12 +29,12 @@ body {
     position: relative;
     width: 40%;
     min-width: 15em;
-    max-width: 22em;
+    max-width: 27em;
     z-index: 2;
     margin: 10% auto;
     background-color: white;
     box-shadow: 0px 8px 8px hsl(0, 0%, 79%);
-    border-radius: 8px;
+    border-radius: 20px;
     overflow: hidden;
 }
 
@@ -46,12 +45,12 @@ body {
 #order {
     font-weight: 900;
     color: hsl(223, 47%, 23%);
-    font-size: 150%;
+    font-size: 1.8em;
     margin: 1.2em auto .4em auto;
 }
 
 #descript {
-    font-size: 75%;
+    font-size: .8;
     margin: 1rem 2.5rem;
     line-height: 1.75;
     color: hsl(224, 23%, 55%);
@@ -88,7 +87,7 @@ body {
 }
 
 #change {
-    font-size: 60%;
+    font-size: .8em;
     font-weight: 600;
     color: hsl(245, 75%, 52%);
     text-decoration: underline;
@@ -103,20 +102,20 @@ body {
 }
 
 #annual {
-    font-size: 70%;
+    font-size: 1em;
     font-weight: 700;
     color: hsl(223, 47%, 23%);
 }
 
 #price {
-    font-size: 70%;
+    font-size: .8em;
     color: hsl(224, 23%, 55%);
     margin-top: .3em;
 }
 
 #bluebox {
     width: 78%;
-    margin: 1.2em auto .8em auto;
+    margin: 2em auto .8em auto;
     background-color: hsl(245, 75%, 52%);
     border-radius: 10px;
     transition: width .3s ease, background-color .3s;
@@ -125,7 +124,7 @@ body {
 }
 
 #proceed {
-    font-size: 65%;
+    font-size: .8em;
     color: white;
     font-weight: 600;
 }
@@ -136,10 +135,10 @@ body {
 }
 
 #cancel {
-    font-size: 60%;
+    font-size: .75em;
     font-weight: 700;
     color: hsl(224, 23%, 55%);
-    margin: 2em auto 2em auto;
+    margin: 2em auto 3em auto;
     transition: font-weight 1s;
 }
 
@@ -164,4 +163,5 @@ button {
     background-size: 100%;
     background-repeat: no-repeat;
     }
+
 }
