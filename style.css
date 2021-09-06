@@ -5,7 +5,8 @@
     background-color: hsl(225, 100%, 94%);
     text-align: center;
     font-family: 'Red Hat Display', sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
+    overflow: hidden;
 }
 
 h1, p, div {
@@ -24,9 +25,8 @@ h1, p, div {
 #app {
     position: relative;
     width: 40%;
-    min-height: 800px;
     min-width: 15em;
-    max-width: 22em;
+    max-width: 20em;
     z-index: 2;
     margin: 5% auto;
     background-color: white;
@@ -42,13 +42,13 @@ h1, p, div {
 #order {
     font-weight: 900;
     color: hsl(223, 47%, 23%);
-    font-size: 100%;
-    margin: 1.4em auto .4em auto;
+    font-size: 135%;
+    margin: 1.2em auto .4em auto;
 }
 
 #descript {
-    font-size: 12px;
-    margin: 8px 20px;
+    font-size: 75%;
+    margin: 1rem 2.5rem;
     line-height: 1.75;
     color: hsl(224, 23%, 55%);
     z-index: 6;
@@ -68,8 +68,9 @@ h1, p, div {
 
 #itunes {
     border-radius: 90px;
-    overflow: hidden;
-    width: 15%;
+    object-fit: cover;
+    width: 18%;
+    margin-left: 1rem;
 
 }
 
